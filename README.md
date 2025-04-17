@@ -7,13 +7,11 @@
   </a>
 </p>
 
-# jsrepo
+# jsrepo docs
 
-docs site for jsrepo
+The docs site for jsrepo
 
 ## Development
-
-**Initial Setup**
 
 ```bash
 pnpm install
@@ -21,7 +19,21 @@ pnpm install
 pnpm dev
 ```
 
-**Formatting + Linting**
+### Environment variables
+
+You'll need to provide the following environment variables:
+
+```.env
+GITHUB_TOKEN=""
+GITLAB_TOKEN=""
+UPSTASH_REDIS_URL=""
+UPSTASH_REDIS_TOKEN=""
+DATABASE_URL="" # postgres db
+```
+
+## Contributing
+
+Make sure to format and lint the code before submitting a PR!
 
 ```bash
 pnpm format
