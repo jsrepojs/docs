@@ -5,6 +5,11 @@
 
 	const providers = [
 		{
+			name: 'jsrepo.com',
+			icon: Icons.JsrepoWordmark,
+			href: '/docs/registry/providers/jsrepo'
+		},
+		{
 			name: 'GitHub',
 			icon: Icons.GitHub,
 			href: '/docs/registry/providers/github'

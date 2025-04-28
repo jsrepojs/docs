@@ -8,6 +8,7 @@ import React from './react.svelte';
 import JavaScript from './javascript.svelte';
 import Vue from './vue.svelte';
 import Jsrepo from './jsrepo.svelte';
+import JsrepoWordmark from './jsrepo-wordmark.svelte';
 import GitLab from './gitlab.svelte';
 import BitBucket from './bitbucket.svelte';
 import Yaml from './yaml.svelte';
@@ -32,6 +33,7 @@ export {
 	JavaScript,
 	Vue,
 	Jsrepo,
+	JsrepoWordmark,
 	GitLab,
 	BitBucket,
 	Yaml,
