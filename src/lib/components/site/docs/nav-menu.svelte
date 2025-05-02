@@ -73,7 +73,7 @@
 		<LightSwitch class="size-9" />
 		<Button
 			target="_blank"
-			href="https://github.com/ieedan/jsrepo"
+			href="https://github.com/jsrepojs/jsrepo"
 			variant="outline"
 			class="size-9 px-2"
 		>

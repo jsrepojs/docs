@@ -19,7 +19,7 @@
 
 <Button
 	target="_blank"
-	href="https://github.com/ieedan/jsrepo"
+	href="https://github.com/jsrepojs/jsrepo"
 	variant="outline"
 	class="h-9 px-2"
 	{...rest}
