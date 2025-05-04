@@ -113,3 +113,103 @@ jsrepo add @ieedan/std/utils/math # add specific block
 jsrepo add --repo @ieedan/std@0.0.1 # add specific version
 jsrepo add --repo @ieedan/std@latest # add tagged version
 ```
+
+## changesets
+
+`jsrepo` registries can now integrate beautifully with [changesets](https://github.com/changesets/changesets). 
+
+Here's a quick tutorial on how to set them up...
+
+Start by running the following commands:
+
+```sh
+npm install @changesets/cli -D
+
+npm changeset init
+```
+
+Now modify your `.changeset/config.json` file like so:
+
+```json showLineNumbers {12-15}
+{
+	"$schema": "https://unpkg.com/@changesets/config@3.1.1/schema.json",
+	"changelog": "@changesets/cli/changelog",
+	"commit": false,
+	"fixed": [],
+	"linked": [],
+	"access": "restricted",
+	"prettier": false,
+	"baseBranch": "main",
+	"updateInternalDependencies": "patch",
+	"ignore": [],
+	"privatePackages": {
+		"version": true,
+		"tag": true
+	}
+}
+```
+
+Update your `jsrepo-build-config.json`:
+
+```jsonc showLineNumbers {3}
+{
+    // -- snip --
+    "version": "package", // now jsrepo will use the version from your package.json
+    // -- snip --
+}
+```
+
+Next add a custom release script to your `package.json`:
+
+```jsonc showLineNumbers {4}
+{
+    // -- snip --
+    "scripts": {
+        "ci:release": "jsrepo publish && changeset tag"
+    },
+    // -- snip --
+}
+```
+
+Now we can setup a workflow to publish to **jsrepo.com**:
+
+> Make sure to generate an access token [here](https://jsrepo.com/account/access-tokens/new) and store it in your actions secrets as `JSREPO_TOKEN`
+
+```yaml
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  release:
+    name: Build & Publish Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Create Release Pull Request or Publish
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          commit: 'chore(release): version package'
+          title: 'chore(release): version package'
+          publish: npm run ci:release
+        env:
+          JSREPO_TOKEN: ${{ secrets.JSREPO_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_ENV: production
+```
+
+Now you can use changesets with `jsrepo` just like with an npm package!
