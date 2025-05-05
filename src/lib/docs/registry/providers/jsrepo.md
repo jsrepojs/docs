@@ -8,13 +8,14 @@ lastUpdated: 4-28-2025
 
 ## semver
 
-One of the greatest benefits of hosting your registry on **jsrepo.com** is first class support for [semver](https://semver.org/) (Semantic Versioning). 
+One of the greatest benefits of hosting your registry on **jsrepo.com** is first class support for [semver](https://semver.org/) (Semantic Versioning).
 
-While using a git provider with tags is a fine solution for basic versioning needs it's far less secure because tags are mutable. 
+While using a git provider with tags is a fine solution for basic versioning needs it's far less secure because tags are mutable.
 
 With **jsrepo.com** versions are immutable, meaning they will forever point to the same version of the code that you originally specified.
 
 Versions can be specified for a **jsrepo.com** registry with the same syntax you might see on npm or jsr:
+
 ```sh
 jsrepo init @ieedan/std@0.0.1
 ```
@@ -22,23 +23,25 @@ jsrepo init @ieedan/std@0.0.1
 **jsrepo** (like npm or jsr) will tag your releases. For instance the latest (non pre-release) version of a registry will be tagged with the `latest` tag. And the latest version of a pre-release will be tagged using it's pre-release label, for instance `1.0.0-next.1` would be tagged with `next`.
 
 You specify a tagged version with the same syntax:
+
 ```sh
 jsrepo init @ieedan/std@latest
 ```
 
 ## Private registries
 
-**jsrepo.com** also has first class support for private registries. It's easier than ever to share code with your entire team using **jsrepo.com**. 
+**jsrepo.com** also has first class support for private registries. It's easier than ever to share code with your entire team using **jsrepo.com**.
 
 Once you have invited your team to an organization on **jsrepo.com** they will be able to access any public or private registries in the scopes owned by that organization with their own PAT.
 
 ## Publishing to jsrepo.com
 
-To get started with [jsrepo.com](https://jsrepo.com) you will need to sign in using your GitHub account. 
+To get started with [jsrepo.com](https://jsrepo.com) you will need to sign in using your GitHub account.
 
 Next claim a scope [here](https://jsrepo.com/account/scopes/new). Scopes are a prefix added to your registry to group related registries together.
 
 For example:
+
 ```sh
 @ieedan/std
 ```
@@ -48,6 +51,7 @@ Here `@ieedan` is the scope and `std` is the registry name.
 Next you will need to create an access token [here](https://jsrepo.com/account/access-tokens/new).
 
 With your newly created access token, authenticate to the jsrepo CLI like so:
+
 ```sh
 jsrepo auth jsrepo --token <token>
 ```
@@ -62,9 +66,9 @@ Before we do that however there's a few things we need to do. For starters we ne
 
 ```jsonc
 {
-    "name": "@ieedan/std",
-    "version": "0.0.1",
-    // ...
+	"name": "@ieedan/std",
+	"version": "0.0.1"
+	// ...
 }
 ```
 
@@ -75,17 +79,18 @@ These function similarly to the `name` and `version` keys in a `package.json` an
 It's also a good idea to include metadata with your registry if you want it to be easily searchable on **jsrepo.com**.
 
 This can be done using the `meta` key:
+
 ```jsonc
 {
-    // ...
-    "meta": {
-        "authors": ["Aidan Bleser"],
-        "bugs": "https://github.com/ieedan/std/issues",
-        "description": "Fully tested and documented TypeScript utilities brokered by jsrepo.",
-        "homepage": "https://ieedan.github.io/std/",
-        "repository": "https://github.com/ieedan/std",
-        "tags": ["typescript", "std", "utilities"]
-    },
+	// ...
+	"meta": {
+		"authors": ["Aidan Bleser"],
+		"bugs": "https://github.com/ieedan/std/issues",
+		"description": "Fully tested and documented TypeScript utilities brokered by jsrepo.",
+		"homepage": "https://ieedan.github.io/std/",
+		"repository": "https://github.com/ieedan/std",
+		"tags": ["typescript", "std", "utilities"]
+	}
 }
 ```
 
@@ -116,7 +121,7 @@ jsrepo add --repo @ieedan/std@latest # add tagged version
 
 ## changesets
 
-`jsrepo` registries can now integrate beautifully with [changesets](https://github.com/changesets/changesets). 
+`jsrepo` registries can now integrate beautifully with [changesets](https://github.com/changesets/changesets).
 
 Here's a quick tutorial on how to set them up...
 
@@ -153,9 +158,9 @@ Update your `jsrepo-build-config.json`:
 
 ```jsonc showLineNumbers {3}
 {
-    // -- snip --
-    "version": "package", // now jsrepo will use the version from your package.json
-    // -- snip --
+	// -- snip --
+	"version": "package" // now jsrepo will use the version from your package.json
+	// -- snip --
 }
 ```
 
@@ -163,11 +168,11 @@ Next add a custom release script to your `package.json`:
 
 ```jsonc showLineNumbers {4}
 {
-    // -- snip --
-    "scripts": {
-        "ci:release": "jsrepo publish && changeset tag"
-    },
-    // -- snip --
+	// -- snip --
+	"scripts": {
+		"ci:release": "jsrepo publish && changeset tag"
+	}
+	// -- snip --
 }
 ```
 
