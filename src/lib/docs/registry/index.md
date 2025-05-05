@@ -247,7 +247,9 @@ However if you configure the `meta` key in the `jsrepo-build-config.json` you ca
 
 ## Live Examples
 
+- [@ieedan/std](https://github.com/ieedan/std)
 - [github/ieedan/std](https://github.com/ieedan/std)
+- [@ieedan/shadcn-svelte-extras](https://github.com/ieedan/shadcn-svelte-extras)
 - [github/ieedan/shadcn-svelte-extras](https://github.com/ieedan/shadcn-svelte-extras)
 - [gitlab/ieedan/std](https://gitlab.com/ieedan/std)
 - [bitbucket/ieedan/std](https://bitbucket.org/ieedan/std)

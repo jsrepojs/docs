@@ -94,7 +94,7 @@ When true jsrepo adds a watermark to each block that includes the registry that 
 
 ```ts showLineNumbers
 /*
-	Installed from github/ieedan/std
+	Installed from @ieedan/std
 */
 
 export type Point = {

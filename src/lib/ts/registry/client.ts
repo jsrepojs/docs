@@ -18,6 +18,8 @@ export function getIcon(registryUrl: string): Component | undefined {
 		return Icons.AzureDevops;
 	} else if (provider.name === 'http') {
 		return Server;
+	} else if (provider.name === 'jsrepo') {
+		return Icons.Jsrepo;
 	}
 
 	return undefined;

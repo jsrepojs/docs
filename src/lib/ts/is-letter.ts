@@ -1,5 +1,5 @@
 /*
-	Installed from github/ieedan/std
+	Installed from @ieedan/std
 */
 
 export const LETTER_REGEX = new RegExp(/[a-zA-Z]/);

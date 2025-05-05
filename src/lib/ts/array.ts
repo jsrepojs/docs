@@ -1,5 +1,5 @@
 /*
-	Installed from github/ieedan/std
+	Installed from @ieedan/std
 */
 
 /** Maps the provided map into an array using the provided mapping function.

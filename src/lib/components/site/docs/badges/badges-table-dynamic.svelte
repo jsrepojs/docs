@@ -42,7 +42,7 @@
 				<Table.Cell>
 					<div class="flex place-items-center gap-2">
 						<!-- we slice off the domain so we just serve directly from static -->
-						<img src={href.slice(18) + 'github/ieedan/std'} {alt} />
+						<img src={href.slice(18) + '@ieedan/std'} {alt} />
 					</div>
 				</Table.Cell>
 				<Table.Cell>
@@ -58,7 +58,7 @@
 							<div class="flex flex-col gap-2">
 								<div>
 									<Label>Registry Url</Label>
-									<Input bind:value={registry} placeholder="i.e. github/ieedan/std" />
+									<Input bind:value={registry} placeholder="i.e. @ieedan/std" />
 								</div>
 								<div>
 									<Label>Preview</Label>

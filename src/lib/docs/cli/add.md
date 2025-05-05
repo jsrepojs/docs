@@ -25,13 +25,13 @@ jsrepo add utils/math
 Add a fully qualified block:
 
 ```sh
-jsrepo add github/ieedan/std/utils/math
+jsrepo add @ieedan/std/utils/math
 ```
 
 Include another registry in the blocks list:
 
 ```sh
-jsrepo add --repo github/ieedan/std
+jsrepo add --repo @ieedan/std
 ```
 
 ## Options
@@ -103,7 +103,7 @@ The repository to download the blocks from.
 #### Usage
 
 ```sh
-jsrepo add --repo github/ieedan/std
+jsrepo add --repo @ieedan/std
 ```
 
 ### `-A, --allow`
@@ -113,7 +113,7 @@ Allow jsrepo to download code from the provided repo. This skips the initial con
 #### Usage
 
 ```sh
-jsrepo add github/ieedan/std/utils/math --allow
+jsrepo add @ieedan/std/utils/math --allow
 ```
 
 ### `-y, --yes`

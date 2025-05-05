@@ -45,7 +45,7 @@
 		"flexsearch": "^0.7.43",
 		"globals": "^16.0.0",
 		"isomorphic-dompurify": "^2.23.0",
-		"jsrepo": "^1.47.0",
+		"jsrepo": "^2.0.0",
 		"markdown-it": "^14.1.0",
 		"markdown-it-table": "^4.1.1",
 		"mdsx": "^0.0.6",

@@ -17,15 +17,15 @@ To get started with **jsrepo** we recommend installing it globally.
 
 ## Initialization
 
-> For this example we will be adding blocks from [github/ieedan/std](https://github.com/ieedan/std).
+> For this example we will be adding blocks from [@ieedan/std](https://github.com/ieedan/std).
 
 Now run:
 
 ```sh
-jsrepo init github/ieedan/std
+jsrepo init @ieedan/std
 ```
 
-This will start the setup for `github/ieedan/std`.
+This will start the setup for `@ieedan/std`.
 
 ```plaintext
 ┌   jsrepo  v1.47.0
@@ -36,9 +36,9 @@ This will start the setup for `github/ieedan/std`.
 ◇  Which formatter would you like to use?
 │  Prettier
 │
-●  Initializing github/ieedan/std
+●  Initializing @ieedan/std
 │
-◇  Fetched manifest from github/ieedan/std
+◇  Fetched manifest from @ieedan/std
 │
 ◇  Which category paths would you like to configure?
 │  ts
