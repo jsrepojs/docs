@@ -48,12 +48,10 @@ For example:
 
 Here `@ieedan` is the scope and `std` is the registry name.
 
-Next you will need to create an access token [here](https://jsrepo.com/account/access-tokens/new).
-
-With your newly created access token, authenticate to the jsrepo CLI like so:
+Next you will need to authenticate to jsrepo.com:
 
 ```sh
-jsrepo auth jsrepo --token <token>
+jsrepo auth
 ```
 
 > If you are publishing in a workflow you can use the `JSREPO_TOKEN` environment variable instead.

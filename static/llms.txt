@@ -8,7 +8,7 @@
 
 ## Provider Support
 
-jsrepo supports multiple ways of serving your registry, you can host your registry on GitHub, GitLab, BitBucket, Azure DevOps or on your own domain.
+jsrepo supports multiple ways of serving your registry, you can host your registry on jsrepo.com, GitHub, GitLab, BitBucket, Azure DevOps or on your own domain.
 
 ## Language Support
 
