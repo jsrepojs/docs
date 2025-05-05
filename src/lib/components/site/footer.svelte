@@ -24,7 +24,7 @@
 		},
 		{
 			title: 'GitHub',
-			href: 'https://github.com/ieedan/jsrepo'
+			href: 'https://github.com/jsrepojs/jsrepo'
 		}
 	];
 </script>

@@ -31,7 +31,7 @@ jsrepo init --registry
 Initialize a project with registries:
 
 ```sh
-jsrepo init github/ieedan/std
+jsrepo init @ieedan/std
 ```
 
 ## Options
@@ -44,7 +44,7 @@ The repositories to install the blocks from. (For project setup)
 #### Usage
 
 ```sh
-jsrepo init --repos github/ieedan/std github/ieedan/shadcn-svelte-extras
+jsrepo init --repos @ieedan/std @ieedan/shadcn-svelte-extras
 ```
 
 ### `--no-watermark`

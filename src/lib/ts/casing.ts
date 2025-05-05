@@ -1,5 +1,5 @@
 /*
-	Installed from github/ieedan/std
+	Installed from @ieedan/std
 */
 
 import { isLetter } from '$lib/ts/is-letter';

@@ -1,5 +1,5 @@
 /*
-	Installed from github/ieedan/std
+	Installed from @ieedan/std
 */
 
 /** This is just a helper type used only within this file */

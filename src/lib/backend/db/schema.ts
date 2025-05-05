@@ -7,8 +7,3 @@ export const registries = pgTable('registries', {
 });
 
 export type Registry = typeof registries.$inferSelect;
-
-export const featuredRegistries = pgTable('featured_registries', {
-	url: text().notNull(),
-	created_at: timestamp()
-});

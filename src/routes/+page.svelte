@@ -97,8 +97,8 @@
 					<Terminal.Loading
 						delay={1500}
 						class="text-blue-400 data-[completed]:text-green-500"
-						loadingMessage="Fetching blocks from github/ieedan/shadcn-svelte-extras"
-						completeMessage="Retrieved blocks from github/ieedan/shadcn-svelte-extras"
+						loadingMessage="Fetching blocks from @ieedan/shadcn-svelte-extras"
+						completeMessage="Retrieved blocks from @ieedan/shadcn-svelte-extras"
 					/>
 					<Terminal.Loading
 						delay={2750}
@@ -142,11 +142,11 @@
 					<Terminal.Loading
 						delay={1500}
 						class="text-blue-400 data-[completed]:text-green-500"
-						loadingMessage="Fetching blocks from github/ieedan/shadcn-svelte-extras"
-						completeMessage="Retrieved blocks from github/ieedan/shadcn-svelte-extras"
+						loadingMessage="Fetching blocks from @ieedan/shadcn-svelte-extras"
+						completeMessage="Retrieved blocks from @ieedan/shadcn-svelte-extras"
 					/>
 					<Terminal.AnimatedSpan delay={2750}>
-						github/ieedan/shadcn-svelte-extras/ui/button
+						@ieedan/shadcn-svelte-extras/ui/button
 					</Terminal.AnimatedSpan>
 					<Terminal.AnimatedSpan delay={3000}>
 						<pre><span class="text-muted-foreground"

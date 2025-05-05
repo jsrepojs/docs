@@ -1,5 +1,5 @@
 /*
-	Installed from github/ieedan/std
+	Installed from @ieedan/std
 */
 
 /** Joins the segments into a single url correctly handling leading and trailing slashes in each segment.

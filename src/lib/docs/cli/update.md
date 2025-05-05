@@ -71,7 +71,7 @@ The repository to download the blocks from.
 #### Usage
 
 ```sh
-jsrepo update --repo github/ieedan/std
+jsrepo update --repo @ieedan/std
 ```
 
 ### `-A, --allow`
@@ -81,7 +81,7 @@ Allow **jsrepo** to download code from the provided repo. This skips the initial
 #### Usage
 
 ```sh
-jsrepo update github/ieedan/std/utils/math --allow
+jsrepo update @ieedan/std/utils/math --allow
 ```
 
 ### `-y, --yes`

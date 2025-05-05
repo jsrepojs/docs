@@ -16,7 +16,7 @@ export const load = async () => {
 async function getStars() {
 	const octokit = new Octokit({ auth: GITHUB_TOKEN });
 
-	const repo = await octokit.rest.repos.get({ owner: 'ieedan', repo: 'jsrepo' });
+	const repo = await octokit.rest.repos.get({ owner: 'jsrepojs', repo: 'jsrepo' });
 
 	return repo.data.stargazers_count;
 }

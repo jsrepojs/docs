@@ -23,7 +23,7 @@ The repository to download the blocks from.
 #### Usage
 
 ```sh
-jsrepo test --repo github/ieedan/std
+jsrepo test --repo @ieedan/std
 ```
 
 ### `-A, --allow`
@@ -33,7 +33,7 @@ Allow **jsrepo** to download code from the provided repo. This skips the initial
 #### Usage
 
 ```sh
-jsrepo test github/ieedan/std/utils/math --allow
+jsrepo test @ieedan/std/utils/math --allow
 ```
 
 ### `--debug`
