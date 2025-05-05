@@ -66,6 +66,10 @@ const tempMap: Record<string, [TempDoc, TempDoc[]] | [string, TempDoc[]]> = {
 				slug: 'test'
 			},
 			{
+				title: 'tokens',
+				slug: 'tokens'
+			},
+			{
 				title: 'update',
 				slug: 'update'
 			}

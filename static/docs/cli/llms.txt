@@ -2,7 +2,7 @@
 
 > A CLI to add shared code from remote repositories.
  
-Latest Version: 1.47.0
+Latest Version: 2.0.0
 
 ## Commands
 
@@ -31,11 +31,25 @@ jsrepo add [options] [blocks...]
 
 ### auth
     
-Provide a token for access to private repositories.
+Authenticate to jsrepo.com.
 
 #### Usage
 ```bash
 jsrepo auth [options] [service]
+```
+
+#### Options
+- --logout: Execute the logout flow. 
+- --token <token>: The token to use for authenticating to jsrepo.com. 
+- --cwd <path>: The current working directory. (default: ./)
+
+### tokens
+    
+Provide a token for access to private repositories.
+
+#### Usage
+```bash
+jsrepo tokens [options] [service]
 ```
 
 #### Options
