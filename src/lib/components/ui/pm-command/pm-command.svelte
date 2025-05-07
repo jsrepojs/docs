@@ -32,7 +32,7 @@
 	};
 
 	let {
-		variant,
+		variant = 'default',
 		class: className,
 		command,
 		agents = ['npm', 'pnpm', 'yarn', 'bun'],

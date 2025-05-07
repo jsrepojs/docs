@@ -1,38 +1,16 @@
 ---
 title: jsrepo.com
-description: How to publish and serve your registry on jsrepo.com.
-lastUpdated: 4-28-2025
+description: How to publish your registry to jsrepo.com.
+lastUpdated: 5-7-2025
 ---
 
-[jsrepo.com](https://jsrepo.com) is the best way to host your registry. It has first class support for semantic versioning and private registries so that you can worry less about hosting and more about shipping.
+[jsrepo.com](https://jsrepo.com) is the best way to host your registry. Here's a few of the key advantages over other providers:
 
-## semver
+- 🔒 First class support for private registries with the `jsrepo auth` command
+- 🔄 [semver](https://semver.org/) support
+- 💨 Improved performance
 
-One of the greatest benefits of hosting your registry on **jsrepo.com** is first class support for [semver](https://semver.org/) (Semantic Versioning).
-
-While using a git provider with tags is a fine solution for basic versioning needs it's far less secure because tags are mutable.
-
-With **jsrepo.com** versions are immutable, meaning they will forever point to the same version of the code that you originally specified.
-
-Versions can be specified for a **jsrepo.com** registry with the same syntax you might see on npm or jsr:
-
-```sh
-jsrepo init @ieedan/std@0.0.1
-```
-
-**jsrepo** (like npm or jsr) will tag your releases. For instance the latest (non pre-release) version of a registry will be tagged with the `latest` tag. And the latest version of a pre-release will be tagged using it's pre-release label, for instance `1.0.0-next.1` would be tagged with `next`.
-
-You specify a tagged version with the same syntax:
-
-```sh
-jsrepo init @ieedan/std@latest
-```
-
-## Private registries
-
-**jsrepo.com** also has first class support for private registries. It's easier than ever to share code with your entire team using **jsrepo.com**.
-
-Once you have invited your team to an organization on **jsrepo.com** they will be able to access any public or private registries in the scopes owned by that organization with their own PAT.
+> jsrepo.com is forever free for public registries
 
 ## Publishing to jsrepo.com
 
@@ -216,3 +194,33 @@ jobs:
 ```
 
 Now you can use changesets with `jsrepo` just like with an npm package!
+
+## Advantages
+
+### semver
+
+One of the greatest benefits of hosting your registry on **jsrepo.com** is first class support for [semver](https://semver.org/) (Semantic Versioning).
+
+While using a git provider with tags is a fine solution for basic versioning needs it's far less secure because tags are mutable.
+
+With **jsrepo.com** versions are immutable, meaning they will forever point to the same version of the code that you originally specified.
+
+Versions can be specified for a **jsrepo.com** registry with the same syntax you might see on npm or jsr:
+
+```sh
+jsrepo init @ieedan/std@0.0.1
+```
+
+**jsrepo** (like npm or jsr) will tag your releases. For instance the latest (non pre-release) version of a registry will be tagged with the `latest` tag. And the latest version of a pre-release will be tagged using it's pre-release label, for instance `1.0.0-next.1` would be tagged with `next`.
+
+You specify a tagged version with the same syntax:
+
+```sh
+jsrepo init @ieedan/std@latest
+```
+
+### Private registries
+
+**jsrepo.com** also has first class support for private registries. It's easier than ever to share code with your entire team using **jsrepo.com**.
+
+Once you have invited your team to an organization on **jsrepo.com** they will be able to access any public or private registries in the scopes owned by that organization with their own PAT.

@@ -42,6 +42,7 @@
 					<Nav.Link href="/docs" title="Docs" onclick={closeMenu} />
 					<Nav.Link href="/registries" title="Registries" onclick={closeMenu} />
 					<Nav.Link href="/demos" title="Demos" onclick={closeMenu} />
+					<Nav.Link href="https://www.jsrepo.com" title="jsrepo.com" onclick={closeMenu} />
 				</Nav.List>
 			</Nav.Group>
 			{#if page.url.pathname.startsWith('/docs')}
