@@ -61,7 +61,7 @@
 					class="text-sm text-muted-foreground transition-all hover:text-foreground data-[active=true]:text-foreground"
 				>
 					jsrepo.com
-					<ArrowUpRight class="inline size-4"/>
+					<ArrowUpRight class="inline size-4" />
 				</a>
 			</div>
 		</div>
