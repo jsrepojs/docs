@@ -23,6 +23,10 @@
 			href: '/demos'
 		},
 		{
+			title: 'jsrepo.com',
+			href: 'https://jsrepo.com'
+		},
+		{
 			title: 'GitHub',
 			href: 'https://github.com/jsrepojs/jsrepo'
 		}
