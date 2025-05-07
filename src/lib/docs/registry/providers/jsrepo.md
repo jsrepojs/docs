@@ -4,6 +4,10 @@ description: How to publish your registry to jsrepo.com.
 lastUpdated: 5-7-2025
 ---
 
+<script>
+	import { TableDynamic as BadgesTableDynamic } from "$lib/components/site/docs/badges-jsrepo"
+</script>
+
 [jsrepo.com](https://jsrepo.com) is the best way to host your registry. Here's a few of the key advantages over other providers:
 
 - 🔒 First class support for private registries with the `jsrepo auth` command
@@ -224,3 +228,7 @@ jsrepo init @ieedan/std@latest
 **jsrepo.com** also has first class support for private registries. It's easier than ever to share code with your entire team using **jsrepo.com**.
 
 Once you have invited your team to an organization on **jsrepo.com** they will be able to access any public or private registries in the scopes owned by that organization with their own PAT.
+
+## Badges
+
+<BadgesTableDynamic/>
