@@ -86,7 +86,7 @@ const tempMap: Record<string, [TempDoc, TempDoc[]] | [string, TempDoc[]]> = {
 				slug: 'providers',
 				children: [
 					{
-						title: 'jsrepo',
+						title: 'jsrepo.com',
 						slug: 'jsrepo',
 						tag: 'New'
 					},

@@ -4,6 +4,7 @@
 	import * as Icons from '$lib/components/icons';
 	import * as Terminal from '$lib/components/ui/terminal';
 	import { Window } from '$lib/components/ui/window';
+	import { ArrowRight } from '@lucide/svelte';
 </script>
 
 <svelte:head>
@@ -17,11 +18,28 @@
 <main class="container flex w-full flex-col pb-10 pt-[--header-height]">
 	<div class="grid gap-8 py-12 md:py-20 lg:grid-cols-2 lg:place-items-center lg:py-32">
 		<div class="flex max-w-2xl flex-col place-items-start text-left">
-			<h1 class="text-4xl font-semibold sm:text-6xl">Maintainable source registries</h1>
-			<p class="text-lg text-muted-foreground">
-				jsrepo provides a rich set of features to make distributing and consuming code from source
-				registries maintainable.
-			</p>
+			<div class="flex flex-col gap-2">
+				<a
+					href="https://www.jsrepo.com"
+					class="group flex w-fit place-items-center rounded-3xl border py-1 pl-2 pr-1 text-sm transition-all hover:bg-card"
+				>
+					<span class="mr-2">🚀</span>
+					<span class="mr-2 text-muted-foreground">|</span>
+					<span class="transition-all group-hover:mr-2"> Introducing jsrepo.com </span>
+					<span
+						class="w-0 scale-0 rounded-full bg-accent p-1 transition-all group-hover:w-6 group-hover:-rotate-45 group-hover:scale-100"
+					>
+						<ArrowRight class="size-4" />
+					</span>
+				</a>
+				<div>
+					<h1 class="text-4xl font-semibold sm:text-6xl">Maintainable source registries</h1>
+					<p class="text-lg text-muted-foreground">
+						jsrepo provides a rich set of features to make distributing and consuming code from
+						source registries maintainable.
+					</p>
+				</div>
+			</div>
 
 			<div class="flex place-items-center justify-center py-2 sm:py-5">
 				<div class="flex place-items-center gap-2">
