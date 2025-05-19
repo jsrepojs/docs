@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss';
 import tailwindcssAnimate from 'tailwindcss-animate';
-import tailwindMaskImage from '@pyncz/tailwind-mask-image'
+import tailwindMaskImage from '@pyncz/tailwind-mask-image';
 
 const config: Config = {
 	darkMode: ['class'],
