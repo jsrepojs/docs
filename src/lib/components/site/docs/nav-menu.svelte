@@ -27,6 +27,8 @@
 	function closeMenu() {
 		open = false;
 	}
+
+	let atScrollBottom = $state(false);
 </script>
 
 <Dialog.Content
@@ -34,7 +36,18 @@
 		'fixed left-0 top-[--header-height] z-50 h-[calc(100svh-var(--header-height))] w-full bg-background'
 	)}
 >
-	<div class="h-[calc(100svh-var(--header-height)-69px)] overflow-y-auto px-8 pb-4">
+	<div
+		onscroll={(e) => {
+			atScrollBottom =
+				e.currentTarget.offsetHeight + e.currentTarget.scrollTop === e.currentTarget.scrollHeight;
+		}}
+		class={cn(
+			'h-[calc(100svh-var(--header-height)-69px)] overflow-y-auto px-8 pb-4 transition-all',
+			{
+				'mask-linear mask-point-from-[90%]': !atScrollBottom
+			}
+		)}
+	>
 		<div class="flex flex-col gap-4">
 			<Nav.Group title="General">
 				<Nav.List>

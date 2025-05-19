@@ -7,9 +7,21 @@
 	import * as Nav from '$lib/components/site/nav';
 
 	let { class: className }: { class?: string } = $props();
+
+	let atScrollBottom = $state(false);
 </script>
 
-<div class={cn('flex flex-col gap-4 overflow-y-auto border-r bg-background pb-4', className)}>
+<div
+	onscroll={(e) => {
+		atScrollBottom =
+			e.currentTarget.offsetHeight + e.currentTarget.scrollTop === e.currentTarget.scrollHeight;
+	}}
+	class={cn(
+		'flex flex-col gap-4 overflow-y-auto border-r bg-background pb-4',
+		{ 'mask-linear mask-point-from-[90%]': !atScrollBottom },
+		className
+	)}
+>
 	{#each Object.entries(map) as [title, docs] (title)}
 		<Nav.Group {title}>
 			<Nav.List>

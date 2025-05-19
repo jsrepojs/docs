@@ -14,8 +14,6 @@ lastUpdated: 5-7-2025
 - 🔄 [semver](https://semver.org/) support
 - 💨 Improved performance
 
-> jsrepo.com is forever free for public registries
-
 ## Publishing to jsrepo.com
 
 To get started with [jsrepo.com](https://jsrepo.com) you will need to sign in using your GitHub account.

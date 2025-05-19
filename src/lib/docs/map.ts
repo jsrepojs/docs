@@ -34,47 +34,6 @@ const tempMap: Record<string, [TempDoc, TempDoc[]] | [string, TempDoc[]]> = {
 			}
 		]
 	],
-	CLI: [
-		'cli',
-		[
-			{
-				title: 'add',
-				slug: 'add'
-			},
-			{
-				title: 'auth',
-				slug: 'auth'
-			},
-			{
-				title: 'build',
-				slug: 'build'
-			},
-			{
-				title: 'exec',
-				slug: 'exec'
-			},
-			{
-				title: 'init',
-				slug: 'init'
-			},
-			{
-				title: 'publish',
-				slug: 'publish'
-			},
-			{
-				title: 'test',
-				slug: 'test'
-			},
-			{
-				title: 'tokens',
-				slug: 'tokens'
-			},
-			{
-				title: 'update',
-				slug: 'update'
-			}
-		].sort(sortAlphabetical)
-	],
 	'Create Your Registry': [
 		{
 			title: 'Getting Started',
@@ -129,6 +88,60 @@ const tempMap: Record<string, [TempDoc, TempDoc[]] | [string, TempDoc[]]> = {
 				slug: 'jsrepo-build-config-json'
 			}
 		]
+	],
+	'jsrepo.com': [
+		{
+			title: 'Introduction',
+			slug: 'jsrepo-com',
+			tag: 'New'
+		},
+		[
+			{
+				title: 'Marketplace',
+				slug: 'marketplace'
+			}
+		]
+	],
+	CLI: [
+		'cli',
+		[
+			{
+				title: 'add',
+				slug: 'add'
+			},
+			{
+				title: 'auth',
+				slug: 'auth'
+			},
+			{
+				title: 'build',
+				slug: 'build'
+			},
+			{
+				title: 'exec',
+				slug: 'exec'
+			},
+			{
+				title: 'init',
+				slug: 'init'
+			},
+			{
+				title: 'publish',
+				slug: 'publish'
+			},
+			{
+				title: 'test',
+				slug: 'test'
+			},
+			{
+				title: 'tokens',
+				slug: 'tokens'
+			},
+			{
+				title: 'update',
+				slug: 'update'
+			}
+		].sort(sortAlphabetical)
 	],
 	Integrations: [
 		'integrations',
