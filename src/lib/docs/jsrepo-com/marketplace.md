@@ -4,7 +4,7 @@ description: Monetize your registries.
 lastUpdated: 5-15-2025
 ---
 
-Before now monetizing a registry required setting up your own auth and payments with the [jsrepo.com](https://www.jsrepo.com) marketplace you can make that our problem.
+Before now monetizing a registry required setting up your own auth and payments. With the [jsrepo.com](https://www.jsrepo.com) marketplace you can make that our problem.
 
 ## Publishing to the Marketplace
 
