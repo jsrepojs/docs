@@ -25,6 +25,10 @@
 		{
 			alt: 'jsrepo downloads yearly',
 			href: (registry: string) => `https://jsrepo.com/badges/${registry}/dy`
+		},
+		{
+			alt: 'jsrepo registry rating',
+			href: (registry: string) => `https://jsrepo.com/badges/${registry}/rating`
 		}
 	];
 
