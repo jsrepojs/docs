@@ -122,6 +122,10 @@ const tempMap: Record<string, [TempDoc, TempDoc[]] | [string, TempDoc[]]> = {
 				slug: 'exec'
 			},
 			{
+				title: 'info',
+				slug: 'info'
+			},
+			{
 				title: 'init',
 				slug: 'init'
 			},
