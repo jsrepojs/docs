@@ -100,6 +100,18 @@ jsrepo exec [options] [script]
 - --verbose: Include debug logs. 
 - --cwd <path>: The current working directory. (default: ./)
 
+### info
+    
+Get info about a registry hosted on jsrepo.com.
+
+#### Usage
+```bash
+jsrepo info [options] <registry>
+```
+
+#### Options
+- --json: Output the response in formatted JSON.
+
 ### init
     
 Initializes your project with a configuration file.
