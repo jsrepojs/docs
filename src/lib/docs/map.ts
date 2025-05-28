@@ -72,6 +72,11 @@ const tempMap: Record<string, [TempDoc, TempDoc[]] | [string, TempDoc[]]> = {
 				]
 			},
 			{
+				title: 'MCP Server',
+				slug: 'mcp',
+				tag: 'New'
+			},
+			{
 				title: 'Language Support',
 				slug: 'language-support'
 			},
@@ -128,6 +133,11 @@ const tempMap: Record<string, [TempDoc, TempDoc[]] | [string, TempDoc[]]> = {
 			{
 				title: 'init',
 				slug: 'init'
+			},
+			{
+				title: 'mcp',
+				slug: 'mcp',
+				tag: 'New'
 			},
 			{
 				title: 'publish',
