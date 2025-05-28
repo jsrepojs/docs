@@ -4,7 +4,7 @@ description: Configuring your registry for the jsrepo MCP server.
 lastUpdated: 5-28-2025
 ---
 
-MCP ([Model Context Protocol](https://modelcontextprotocol.io/introduction)) is a protocol that standardizes how applications provide context to LLMs. The jsrepo MCP server allows applications like Cursor or Windsurf to control the jsrepo CLI. 
+MCP ([Model Context Protocol](https://modelcontextprotocol.io/introduction)) is a protocol that standardizes how applications provide context to LLMs. The jsrepo MCP server allows applications like Cursor or Windsurf to control the jsrepo CLI.
 
 All registries on jsrepo are automatically MCP compatible. You can start asking about components and running commands today with zero configuration by the registry author.
 
@@ -80,10 +80,11 @@ Create a rules file under `./rules/registry.mdc`:
 
 ```md
 ---
-description: 
-globs: 
+description:
+globs:
 alwaysApply: true
 ---
+
 Before writing a new TypeScript utility check if the @ieedan/std jsrepo registry has it already and if it does use it instead.
 ```
 
