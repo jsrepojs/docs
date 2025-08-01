@@ -31,6 +31,19 @@ Add the following code to your `.cursor/mcp.json` file:
 }
 ```
 
+Optionally, you can specify a registry to use:
+
+```jsonc
+{
+	"mcpServers": {
+		"jsrepo": {
+			"command": "npx",
+			"args": ["jsrepo", "mcp", "@ieedan/std"]
+		}
+	}
+}
+```
+
 ## Windsurf Usage
 
 Add the following code to your `.codeium/windsurf/mcp_config.json` file:
