@@ -16,6 +16,12 @@ Start an the MCP server:
 jsrepo mcp
 ```
 
+Start an the MCP server for a specific registry:
+
+```sh
+jsrepo mcp @ieedan/std
+```
+
 Inspect and test the MCP server:
 
 ```sh

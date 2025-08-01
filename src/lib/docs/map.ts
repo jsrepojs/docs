@@ -46,8 +46,7 @@ const tempMap: Record<string, [TempDoc, TempDoc[]] | [string, TempDoc[]]> = {
 				children: [
 					{
 						title: 'jsrepo.com',
-						slug: 'jsrepo',
-						tag: 'New'
+						slug: 'jsrepo'
 					},
 					{
 						title: 'GitHub',
@@ -73,8 +72,7 @@ const tempMap: Record<string, [TempDoc, TempDoc[]] | [string, TempDoc[]]> = {
 			},
 			{
 				title: 'MCP Server',
-				slug: 'mcp',
-				tag: 'New'
+				slug: 'mcp'
 			},
 			{
 				title: 'Language Support',
@@ -97,8 +95,7 @@ const tempMap: Record<string, [TempDoc, TempDoc[]] | [string, TempDoc[]]> = {
 	'jsrepo.com': [
 		{
 			title: 'Introduction',
-			slug: 'jsrepo-com',
-			tag: 'New'
+			slug: 'jsrepo-com'
 		},
 		[
 			{
@@ -136,8 +133,7 @@ const tempMap: Record<string, [TempDoc, TempDoc[]] | [string, TempDoc[]]> = {
 			},
 			{
 				title: 'mcp',
-				slug: 'mcp',
-				tag: 'New'
+				slug: 'mcp'
 			},
 			{
 				title: 'publish',
