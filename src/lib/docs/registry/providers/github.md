@@ -1,7 +1,7 @@
 ---
 title: GitHub
 description: How to use GitHub as your registry provider.
-lastUpdated: 4-10-2025
+lastUpdated: 9-3-2025
 ---
 
 ## Branches and Tags
@@ -46,7 +46,7 @@ When referencing GitHub as the provider you can use the `github` shorthand in pl
 Example:
 
 ```sh
-npx jsrepo add @ieedan/std/utils/math
+npx jsrepo add github/ieedan/std/utils/math
 ```
 
 In the `jsrepo.json`:
@@ -55,7 +55,7 @@ In the `jsrepo.json`:
 {
 	"$schema": "https://unpkg.com/jsrepo@1.47.0/schemas/project-config.json",
 	// use github instead of https://github.com
-	"repos": ["@ieedan/std"],
+	"repos": ["github/ieedan/std"],
 	"path": "src/blocks",
 	"includeTests": false,
 	"watermark": true,
