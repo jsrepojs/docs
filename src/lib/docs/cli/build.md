@@ -58,6 +58,16 @@ Include only the categories with these names. Corresponding config key: `include
 jsrepo build --include-categories utils scripts
 ```
 
+### `--include-files`
+
+Additional files to include in the manifest. Corresponding config key: `includeFiles`
+
+#### Usage
+
+```sh
+jsrepo build --include-files ./src/**/*.txt
+```
+
 ### `--exclude-blocks`
 
 Do not include the blocks with these names. Corresponding config key: `excludeBlocks`

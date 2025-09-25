@@ -56,6 +56,20 @@ Whether or not to include test files when installing blocks.
 }
 ```
 
+## includeFiles
+
+Additional files to include in the manifest. This can be used to include arbitrary extra static files which don't have language support.
+This config option supports ignore style glob patterns.
+
+```jsonc showLineNumbers
+{
+	"includeFiles": [
+		"./src/blocks/header/hero.png",
+		"./src/**/*.txt"
+	]
+}
+```
+
 ## paths
 
 Where to add specific categories in your project.
