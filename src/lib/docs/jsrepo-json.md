@@ -63,10 +63,7 @@ This config option supports ignore style glob patterns.
 
 ```jsonc showLineNumbers
 {
-	"includeFiles": [
-		"./src/blocks/header/hero.png",
-		"./src/**/*.txt"
-	]
+	"includeFiles": ["./src/blocks/header/hero.png", "./src/**/*.txt"]
 }
 ```
 
