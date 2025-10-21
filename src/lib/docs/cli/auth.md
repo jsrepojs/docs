@@ -67,5 +67,5 @@ Help with the command.
 #### Usage
 
 ```sh
-jsrepo add --help
+jsrepo auth --help
 ```
