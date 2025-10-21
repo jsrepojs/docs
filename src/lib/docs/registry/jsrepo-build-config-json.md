@@ -145,6 +145,17 @@ The path of the file in your registry.
 }
 ```
 
+### `includeFiles`
+
+Additional files to include in the manifest. This can be used to include arbitrary extra static files which don't have language support.
+This config option supports ignore style glob patterns.
+
+```jsonc showLineNumbers
+{
+	"includeFiles": ["./src/blocks/header/hero.png", "./src/**/*.txt"]
+}
+```
+
 ### `listBlocks`
 
 `listBlocks` is a list of block names that should be listed when the user runs the `add` command.
