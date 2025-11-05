@@ -7,12 +7,14 @@
 	import Header from '$lib/components/site/header.svelte';
 	import { dev } from '$app/environment';
 	import Footer from '$lib/components/site/footer.svelte';
-	import { commandContext } from '$lib/context';
+	import { commandContext, setupV3Banner } from '$lib/context';
 	import { UseBoolean } from '$lib/hooks/use-boolean.svelte';
 
 	let { data, children } = $props();
 
 	commandContext.set(new UseBoolean(false));
+
+	const bannerContext = setupV3Banner();
 </script>
 
 <!-- only inject analytics in production -->
@@ -24,7 +26,7 @@
 {/if}
 <ModeWatcher />
 
-<div style="--header-height: 64px; --aside-width: 14rem; --sidebar-width: 14rem;">
+<div style="--header-height: {bannerContext.isDismissed ? '64px' : 'calc(64px + 3rem)'}; --aside-width: 14rem; --sidebar-width: 14rem;">
 	{@render children()}
 
 	<Footer />

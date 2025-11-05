@@ -20,12 +20,12 @@
 		<div class="flex max-w-2xl flex-col place-items-start text-left">
 			<div class="flex flex-col gap-2">
 				<a
-					href="https://www.jsrepo.com"
+					href="https://v3.jsrepo.dev"
 					class="group flex w-fit place-items-center rounded-3xl border py-1 pl-2 pr-1 text-sm transition-all hover:bg-card"
 				>
 					<span class="mr-2">🚀</span>
 					<span class="mr-2 text-muted-foreground">|</span>
-					<span class="transition-all group-hover:mr-2"> Introducing jsrepo.com </span>
+					<span class="transition-all group-hover:mr-2"> jsrepo v3 is in beta! </span>
 					<span
 						class="w-0 scale-0 rounded-full bg-accent p-1 transition-all group-hover:w-6 group-hover:-rotate-45 group-hover:scale-100"
 					>

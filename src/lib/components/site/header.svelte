@@ -6,25 +6,47 @@
 	import { ArrowUpRight, Menu, X } from '@lucide/svelte';
 	import { Dialog } from 'bits-ui';
 	import { active } from '$lib/actions/active.svelte';
-	import { commandContext } from '$lib/context';
+	import { commandContext, V3BannerCtx } from '$lib/context';
 	import { shortcut } from '$lib/actions/shortcut.svelte';
 	import Search from './docs/search/search.svelte';
 	import { Kbd } from '../ui/kbd';
 	import { page } from '$app/state';
+	import { cn } from '$lib/utils/utils';
 
 	let { stars }: { stars: Promise<number> } = $props();
 
 	let menuOpen = $state(false);
 
 	const commandState = commandContext.get();
+
+	const bannerContext = V3BannerCtx.get();
 </script>
 
 <svelte:window use:shortcut={{ key: 'k', ctrl: true, callback: commandState.setTrue }} />
 
 <Search />
 
+{#if !bannerContext.isDismissed}
+	<div
+		class="fixed left-0 top-0 z-[100] flex h-12 w-full items-center justify-center gap-1 bg-primary text-center text-primary-foreground"
+	>
+		jsrepo v3 is in beta!
+		<a href="https://v3.jsrepo.dev" class="text-primary-foreground underline">
+			Check out the new docs <ArrowUpRight class="inline size-4" />
+		</a>
+		<Button class="right-2 absolute" variant="ghost" size="icon" onclick={() => bannerContext.dismiss()}>
+			<X class="size-4" />
+		</Button>
+	</div>
+{/if}
+
 <header
-	class="fixed left-0 top-0 z-10 flex h-[--header-height] w-full items-center border-b bg-background"
+	class={cn(
+		'fixed left-0 top-0 z-10 flex h-[--header-height] w-full items-center border-b bg-background',
+		{
+			'h-[calc(var(--header-height)-3rem)] top-12': !bannerContext.isDismissed
+		}
+	)}
 >
 	<div class="container flex items-center justify-between">
 		<div class="flex place-items-center gap-6">
